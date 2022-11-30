@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS w listach i stylowanie menu</title>
+
+    <link rel="stylesheet" href="stylowanie.css">
+
+</head>
+
+<body>
+  
+    <a href="#example"><div class="oko">CSS w listach i stylowanie menu </div></a>
+
+    <span id="example">CSS w listach</span>
+
+   
+   <p >Przeglądarki ustawiają domyślne style dla list. Taki styl objawia się w charakterystycznym oznaczeniu wypunktowania, oraz wielkości wcięć. Wszystkie te elementy możemy zmienić przy pomocy CSS.</p>
+
+  <p>Styl definiuje właściwości listy. Za pomocą tego jednego polecenia można ustalić wszystkie, następujące właściwości listy: <i> list-style-image, list-style-position, list-style-type</i>.<br>
+     Jedno polecenie zamiast kilku jest po prostu wygodne w stosowaniu. Kolejność podawanych wartości ma znaczenie.</p>
+
+     <p>list-style-type (typ listy - możliwe wartości: disc, circle, square, decimal, decimal-leading-zero, lower-roman, upper-roman, lower-greek, lower-latin, upper-latin, armenian, georgian, lower-alpha, upper-alpha) <br>
+list-style-image (obraz markera listy z użyciem url) <br>
+list-style-position (pozycja markera listy: inside, outside) </p>
+
+<p>W jaki sposób można uchwycić pojedynczy element listy czyli <i>li</i>. Są dwa sposoby: <br>
+    1 przy użyciu spacji: <i>ul li {}</i> <br>
+    2 przy użtyciu operatora:<i> ul > li {}</i>
+</p>
+
+
+
+
+    <div class="nerka">
+    <p> ul style="list-style: circle url(słoń.png) inside;"><br>
+        li> pierwszy element listy <br>
+        li> drugi element listy <br>
+        li> trzeci element listy <br>
+        /ul></p></div>
+
+        
+        
+        <div class="nerka">
+        <ul style="list-style: circle url(słoń.png) inside ;">
+            <li> pierwszy element listy </li>
+            <li> drugi element listy </li>
+            <li> trzeci element listy </li>
+            </ul></div>
+    
+
+ <a  href="#uszy"><img src="https://cdn.pixabay.com/photo/2012/04/24/13/58/arrow-40168_960_720.png"></a>
+
+    <span class="uszy" id="uszy">Stylowanie menu</span>
+
+
+   <div class="palec">
+    <nav>
+        <ul>
+        <li><a href="link">Przycisk 1</a></li>
+        <li><a href="link">Przycisk 2</a></li>
+        <li><a href="link">Przycisk 3</a></li>
+        <li><a href="link">Przycisk 4</a></li>
+        </ul>
+        </nav>
+     </div>   
+
+     <div class="spoko">
+       
+        ul { <br>
+            float: left; <br>
+            width: 100%; <br>
+            padding: 0; <br>
+            margin: 0; <br>
+            list-style: none; 
+            } 
+      </div>       
+     <div class="spoko">
+    
+            li a { <br>
+            display: block; <br>
+            float: left; <br>
+            text-align: center; <br>
+            font-size: 15px; <br>
+            width: 150px; <br>
+            text-decoration: none; <br>
+            color: navy; <br>
+            background-color: red; <br>
+            padding: 15px 20px; <br>
+            margin: 1px 2px 2px 1px; <br>
+            border: 2px solid navy; <br>
+            border-radius: 4px; <br>
+            -moz-border-radius: 7px; <br>
+            -webkit-border-radius: 8px; <br>
+            box-shadow: 0px 2px 3px gray; <br> 
+            -moz-box-shadow: 0px 2px 3px gray; <br>
+            -webkit-box-shadow: 0px 2px 3px gray;
+            }
+
+    </div>
+     <div class="spoko">
+
+            li a:hover { <br>
+            color: white; <br>
+            background: gray; <br>
+            border: 1px solid white;
+            }
+          
+
+    </div>
+
+    
+
+       <a href="#nos"><img src="https://cdn.pixabay.com/photo/2012/04/24/13/58/arrow-40168_960_720.png"></a>
+
+    <span class="nos" id="nos">Dziękujemy z uwagę</span>
+
+
+   
+</body>
+
+</html>
